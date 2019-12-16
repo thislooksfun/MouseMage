@@ -1,0 +1,1169 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		061C99B2C15028BACE11AE97AB8EF7BE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181ED4CD7BEA96EE4298C195F8FDB421 /* Security.framework */; };
+		0B424D2E8F4F76DD84FC0A9A20AFB7D2 /* CocoaAsyncSocket-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F791B011013A93B12F50B8AA37B57E /* CocoaAsyncSocket-macOS-dummy.m */; };
+		1819791C9619F8FA855D0353BC40684C /* CocoaAsyncSocket-macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF39FC8EDB966C37E6A958F7118793BB /* CocoaAsyncSocket-macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CD5AB66966E691F4AFCBEDCB82CA928 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0031390B484CF1B48A0005D0DD4746FE /* Foundation.framework */; };
+		30DB47F9CB6E28D333F1B82E6124894E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98084203B3A81883D9E05408D77D6600 /* CFNetwork.framework */; };
+		31AD957C790C00CD00EF0719DCD789F1 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3500BB3FF31A2F0FBC9C511059B08CC0 /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3CD82E5E2F9A7CF39FA17F8CE0059020 /* Pods-MouseMage-MouseMage macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9D82DDC4D60A5C30E17E3434B772ED /* Pods-MouseMage-MouseMage macOS-dummy.m */; };
+		3DE951BB0AE5F31D86228FF0A0B34D6E /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3500BB3FF31A2F0FBC9C511059B08CC0 /* GCDAsyncUdpSocket.m */; };
+		3DEBDBB55650CEEE702679196B9EE87C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAEA0B7775956DACE13B3216BC0AAB2 /* Cocoa.framework */; };
+		4CF0235DEA215BDA988E8D8038A97E7D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003D5C5894FC035270A48A1A76F1D5B3 /* Security.framework */; };
+		4D29EAD3A4ABAD587E87460EAFD321D3 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F5D130524C4AF78F57038987F89960C /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59AAA5A490AD70FC4000EC31E45568AC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAEA0B7775956DACE13B3216BC0AAB2 /* Cocoa.framework */; };
+		59C09A72871667E83A0D1E7F0D55D7BB /* Pods-MouseMage-MouseMage iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52C04DE55A4957E806D8D7E3DC245C54 /* Pods-MouseMage-MouseMage iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E613522AA6A4B26E126BFB66531A23D /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F5D130524C4AF78F57038987F89960C /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71984981BAAE0937024F4CD50939B517 /* Pods-MouseMage-MouseMage macOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A32573A73CBDEABE56F25C655A6101 /* Pods-MouseMage-MouseMage macOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		749B117410322704AC9E1CB019C64731 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F8A76112534ECC5DFDDBEAE3250AB0 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91816E882011D881C1ACED1387006DA2 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC817A6B950B57AB7BF678ACCF181CB /* CoreServices.framework */; };
+		9F2D898B3D0FACE6C771FCEDD10E252A /* Pods-MouseMage-MouseMage watchOS WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C4E5347E83664AF9D6D6890F2A7A1 /* Pods-MouseMage-MouseMage watchOS WatchKit Extension-dummy.m */; };
+		A0DC8157CAF04FC06AEE60FE7861B86F /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AC8C90F166D4B3CB0C7331009CEDAE /* GCDAsyncSocket.m */; };
+		A44C0AAD7D56E69B103DA6DB7776D1D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0031390B484CF1B48A0005D0DD4746FE /* Foundation.framework */; };
+		A84B0E3AF5F7C832CABFE08C0A20C151 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AC8C90F166D4B3CB0C7331009CEDAE /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B14BAD75C23C90E5AA1AE7CEF08F635F /* CocoaAsyncSocket-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F38860856C8A6980CEB9A0A802299975 /* CocoaAsyncSocket-iOS-dummy.m */; };
+		DE93D4180211D2B7CF69513E656C23EE /* Pods-MouseMage-MouseMage watchOS WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8818CA4083D658734259FC531E1E91E /* Pods-MouseMage-MouseMage watchOS WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E30B18983FEB9AFFDBBA9E9747EABA96 /* CocoaAsyncSocket-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 678B503E9CCEF29C17E81DD7465EBCB4 /* CocoaAsyncSocket-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E867362E65B09E162CA6B9505C807B98 /* Pods-MouseMage-MouseMage iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E443109A584E59966279CF502C309F3F /* Pods-MouseMage-MouseMage iOS-dummy.m */; };
+		F2EEC4993A98A06950CA2EF1619E78E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0031390B484CF1B48A0005D0DD4746FE /* Foundation.framework */; };
+		FBDF1E50927E651434340079960B75C4 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F8A76112534ECC5DFDDBEAE3250AB0 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D0643F00B0F90B7BFD15318C000C51A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B6E44B768ABE45C02ACE23636D4A591;
+			remoteInfo = "CocoaAsyncSocket-iOS";
+		};
+		46317EAE5057B10A4C2F42E6F67A7823 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B6E44B768ABE45C02ACE23636D4A591;
+			remoteInfo = "CocoaAsyncSocket-iOS";
+		};
+		ED5299B066E34F6071291401ACC12040 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C751A960C44A3AF79929BC14FD193AC;
+			remoteInfo = "CocoaAsyncSocket-macOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0031390B484CF1B48A0005D0DD4746FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		003D5C5894FC035270A48A1A76F1D5B3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		0847548BBDA4E0ECCFB74E548DE8AD15 /* Pods-MouseMage-MouseMage watchOS WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MouseMage-MouseMage watchOS WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		181ED4CD7BEA96EE4298C195F8FDB421 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		1CD2DDEB824EA3D33EB954ADDF883C92 /* CocoaAsyncSocket-macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "CocoaAsyncSocket-macOS.modulemap"; path = "../CocoaAsyncSocket-macOS/CocoaAsyncSocket-macOS.modulemap"; sourceTree = "<group>"; };
+		2639E81FE8BF410417EC57B3B2A69B95 /* CocoaAsyncSocket-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "CocoaAsyncSocket-iOS.modulemap"; sourceTree = "<group>"; };
+		3500BB3FF31A2F0FBC9C511059B08CC0 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		3D8FEB76575FECF84B80F84B7FBAAE3E /* Pods-MouseMage-MouseMage iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MouseMage-MouseMage iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		406CBC77DF2BEBEF1380234F8E3CD232 /* Pods-MouseMage-MouseMage macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MouseMage-MouseMage macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4234E82D18302025370CA0E7069C579D /* Pods-MouseMage-MouseMage watchOS WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MouseMage-MouseMage watchOS WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		42A32573A73CBDEABE56F25C655A6101 /* Pods-MouseMage-MouseMage macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MouseMage-MouseMage macOS-umbrella.h"; sourceTree = "<group>"; };
+		4E34060F0E50D7E1F8818E6F644096B9 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket.framework; path = "CocoaAsyncSocket-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E6C0C00285B318B879CD7FD11990702 /* Pods-MouseMage-MouseMage iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MouseMage-MouseMage iOS-Info.plist"; sourceTree = "<group>"; };
+		52C04DE55A4957E806D8D7E3DC245C54 /* Pods-MouseMage-MouseMage iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MouseMage-MouseMage iOS-umbrella.h"; sourceTree = "<group>"; };
+		5C9C4E5347E83664AF9D6D6890F2A7A1 /* Pods-MouseMage-MouseMage watchOS WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MouseMage-MouseMage watchOS WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
+		5DEF7E182922864A2399A8AC3CC5DFCE /* Pods-MouseMage-MouseMage watchOS WatchKit Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MouseMage-MouseMage watchOS WatchKit Extension-Info.plist"; sourceTree = "<group>"; };
+		6506F3B7998081D0D4C1D6B9F75EC914 /* CocoaAsyncSocket-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaAsyncSocket-iOS-Info.plist"; sourceTree = "<group>"; };
+		678B503E9CCEF29C17E81DD7465EBCB4 /* CocoaAsyncSocket-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-iOS-umbrella.h"; sourceTree = "<group>"; };
+		691ECD7855E8FC99511466199AB2D93A /* Pods-MouseMage-MouseMage macOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MouseMage-MouseMage macOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6AB934EB0BA2BD7AB57E04F9E06AF33A /* Pods-MouseMage-MouseMage macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MouseMage-MouseMage macOS.release.xcconfig"; sourceTree = "<group>"; };
+		6B0465DEC117004ECDBC1E28D0C4161A /* Pods_MouseMage_MouseMage_watchOS_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MouseMage_MouseMage_watchOS_WatchKit_Extension.framework; path = "Pods-MouseMage-MouseMage watchOS WatchKit Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CAEA0B7775956DACE13B3216BC0AAB2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		77654FC06458E91B98E7F72748D08199 /* Pods-MouseMage-MouseMage macOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MouseMage-MouseMage macOS.modulemap"; sourceTree = "<group>"; };
+		78D2FB68BAC85203BD816827A395670C /* Pods-MouseMage-MouseMage macOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MouseMage-MouseMage macOS-Info.plist"; sourceTree = "<group>"; };
+		7C03AF0C57167656D1BFCFF8C3B8BE3E /* Pods-MouseMage-MouseMage macOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MouseMage-MouseMage macOS-frameworks.sh"; sourceTree = "<group>"; };
+		7D6DBB1494302D26BAE42129E4EC3832 /* Pods_MouseMage_MouseMage_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MouseMage_MouseMage_macOS.framework; path = "Pods-MouseMage-MouseMage macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		852F870A3E447F37922DC900999879C4 /* Pods-MouseMage-MouseMage watchOS WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MouseMage-MouseMage watchOS WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		8D4D4BDD6E48F2F491A3B51613EA4FF1 /* Pods_MouseMage_MouseMage_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MouseMage_MouseMage_iOS.framework; path = "Pods-MouseMage-MouseMage iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91915A1CB464139CF594C5713911E9FB /* CocoaAsyncSocket-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CocoaAsyncSocket-iOS.xcconfig"; sourceTree = "<group>"; };
+		95AC8C90F166D4B3CB0C7331009CEDAE /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		96652D3A58B6AB8003171BCCCD695884 /* Pods-MouseMage-MouseMage watchOS WatchKit Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MouseMage-MouseMage watchOS WatchKit Extension-frameworks.sh"; sourceTree = "<group>"; };
+		98084203B3A81883D9E05408D77D6600 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		992C2646486A52AD307D9FFC2C2AED03 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket.framework; path = "CocoaAsyncSocket-macOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D7D0F0555E5C6BB232DDE4ED5000082 /* CocoaAsyncSocket-macOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "CocoaAsyncSocket-macOS-Info.plist"; path = "../CocoaAsyncSocket-macOS/CocoaAsyncSocket-macOS-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F5D130524C4AF78F57038987F89960C /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		A3F791B011013A93B12F50B8AA37B57E /* CocoaAsyncSocket-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CocoaAsyncSocket-macOS-dummy.m"; path = "../CocoaAsyncSocket-macOS/CocoaAsyncSocket-macOS-dummy.m"; sourceTree = "<group>"; };
+		A5158BC7249E246397503A6EC35BC527 /* CocoaAsyncSocket-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-iOS-prefix.pch"; sourceTree = "<group>"; };
+		A9C0C1FCA97F067913DE63CD224AFA9A /* CocoaAsyncSocket-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CocoaAsyncSocket-macOS-prefix.pch"; path = "../CocoaAsyncSocket-macOS/CocoaAsyncSocket-macOS-prefix.pch"; sourceTree = "<group>"; };
+		AA9D82DDC4D60A5C30E17E3434B772ED /* Pods-MouseMage-MouseMage macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MouseMage-MouseMage macOS-dummy.m"; sourceTree = "<group>"; };
+		AAFB72126285BC692E6EDEFCFB1DC5B1 /* Pods-MouseMage-MouseMage watchOS WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MouseMage-MouseMage watchOS WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		AED724790590BDAD83B85D0C673F09A0 /* Pods-MouseMage-MouseMage iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MouseMage-MouseMage iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B0FD739E93F90FA4A63DB0654F9F2842 /* Pods-MouseMage-MouseMage macOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MouseMage-MouseMage macOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		B83CBBBAD892E9BA327E9B26354143FA /* Pods-MouseMage-MouseMage iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MouseMage-MouseMage iOS-frameworks.sh"; sourceTree = "<group>"; };
+		B8818CA4083D658734259FC531E1E91E /* Pods-MouseMage-MouseMage watchOS WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MouseMage-MouseMage watchOS WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
+		B8FD7941A6344C3B9A1058F1CB9E3EC1 /* Pods-MouseMage-MouseMage iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MouseMage-MouseMage iOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		CE878E15384FCDCD4983C2F70FE99766 /* Pods-MouseMage-MouseMage iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MouseMage-MouseMage iOS.modulemap"; sourceTree = "<group>"; };
+		E443109A584E59966279CF502C309F3F /* Pods-MouseMage-MouseMage iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MouseMage-MouseMage iOS-dummy.m"; sourceTree = "<group>"; };
+		E84A75391FD5E0F58DA0AA238BF5D2C1 /* Pods-MouseMage-MouseMage iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MouseMage-MouseMage iOS.release.xcconfig"; sourceTree = "<group>"; };
+		EC5E1883885A535493B5370735DCCD4E /* Pods-MouseMage-MouseMage watchOS WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MouseMage-MouseMage watchOS WatchKit Extension.modulemap"; sourceTree = "<group>"; };
+		EEC817A6B950B57AB7BF678ACCF181CB /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		F09681359F7B157FC33FB7E6352B1DDF /* CocoaAsyncSocket-macOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "CocoaAsyncSocket-macOS.xcconfig"; path = "../CocoaAsyncSocket-macOS/CocoaAsyncSocket-macOS.xcconfig"; sourceTree = "<group>"; };
+		F38860856C8A6980CEB9A0A802299975 /* CocoaAsyncSocket-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-iOS-dummy.m"; sourceTree = "<group>"; };
+		F4F8A76112534ECC5DFDDBEAE3250AB0 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		FF39FC8EDB966C37E6A958F7118793BB /* CocoaAsyncSocket-macOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CocoaAsyncSocket-macOS-umbrella.h"; path = "../CocoaAsyncSocket-macOS/CocoaAsyncSocket-macOS-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01D37CE6B1059EAD6C2F474632548E41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DEBDBB55650CEEE702679196B9EE87C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ED4EC08803F910DEFCA5090559EC667 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30DB47F9CB6E28D333F1B82E6124894E /* CFNetwork.framework in Frameworks */,
+				F2EEC4993A98A06950CA2EF1619E78E5 /* Foundation.framework in Frameworks */,
+				061C99B2C15028BACE11AE97AB8EF7BE /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8503F15E3C002340C262C9D930E81565 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CD5AB66966E691F4AFCBEDCB82CA928 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8DB6B712F911CFF098C6FD6D0DF205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59AAA5A490AD70FC4000EC31E45568AC /* Cocoa.framework in Frameworks */,
+				91816E882011D881C1ACED1387006DA2 /* CoreServices.framework in Frameworks */,
+				4CF0235DEA215BDA988E8D8038A97E7D /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E19E35DA711C998F961715781BD989F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A44C0AAD7D56E69B103DA6DB7776D1D8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04E35C190AFD0A072649B397A2BA1CC7 /* Pods-MouseMage-MouseMage watchOS WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EC5E1883885A535493B5370735DCCD4E /* Pods-MouseMage-MouseMage watchOS WatchKit Extension.modulemap */,
+				0847548BBDA4E0ECCFB74E548DE8AD15 /* Pods-MouseMage-MouseMage watchOS WatchKit Extension-acknowledgements.markdown */,
+				852F870A3E447F37922DC900999879C4 /* Pods-MouseMage-MouseMage watchOS WatchKit Extension-acknowledgements.plist */,
+				5C9C4E5347E83664AF9D6D6890F2A7A1 /* Pods-MouseMage-MouseMage watchOS WatchKit Extension-dummy.m */,
+				96652D3A58B6AB8003171BCCCD695884 /* Pods-MouseMage-MouseMage watchOS WatchKit Extension-frameworks.sh */,
+				5DEF7E182922864A2399A8AC3CC5DFCE /* Pods-MouseMage-MouseMage watchOS WatchKit Extension-Info.plist */,
+				B8818CA4083D658734259FC531E1E91E /* Pods-MouseMage-MouseMage watchOS WatchKit Extension-umbrella.h */,
+				AAFB72126285BC692E6EDEFCFB1DC5B1 /* Pods-MouseMage-MouseMage watchOS WatchKit Extension.debug.xcconfig */,
+				4234E82D18302025370CA0E7069C579D /* Pods-MouseMage-MouseMage watchOS WatchKit Extension.release.xcconfig */,
+			);
+			name = "Pods-MouseMage-MouseMage watchOS WatchKit Extension";
+			path = "Target Support Files/Pods-MouseMage-MouseMage watchOS WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		13275B91AF405F1995B80443FBF2AF60 /* Pods-MouseMage-MouseMage iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CE878E15384FCDCD4983C2F70FE99766 /* Pods-MouseMage-MouseMage iOS.modulemap */,
+				3D8FEB76575FECF84B80F84B7FBAAE3E /* Pods-MouseMage-MouseMage iOS-acknowledgements.markdown */,
+				B8FD7941A6344C3B9A1058F1CB9E3EC1 /* Pods-MouseMage-MouseMage iOS-acknowledgements.plist */,
+				E443109A584E59966279CF502C309F3F /* Pods-MouseMage-MouseMage iOS-dummy.m */,
+				B83CBBBAD892E9BA327E9B26354143FA /* Pods-MouseMage-MouseMage iOS-frameworks.sh */,
+				4E6C0C00285B318B879CD7FD11990702 /* Pods-MouseMage-MouseMage iOS-Info.plist */,
+				52C04DE55A4957E806D8D7E3DC245C54 /* Pods-MouseMage-MouseMage iOS-umbrella.h */,
+				AED724790590BDAD83B85D0C673F09A0 /* Pods-MouseMage-MouseMage iOS.debug.xcconfig */,
+				E84A75391FD5E0F58DA0AA238BF5D2C1 /* Pods-MouseMage-MouseMage iOS.release.xcconfig */,
+			);
+			name = "Pods-MouseMage-MouseMage iOS";
+			path = "Target Support Files/Pods-MouseMage-MouseMage iOS";
+			sourceTree = "<group>";
+		};
+		3080A79DED44578083E8E78E65C021E4 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				F4F8A76112534ECC5DFDDBEAE3250AB0 /* GCDAsyncSocket.h */,
+				95AC8C90F166D4B3CB0C7331009CEDAE /* GCDAsyncSocket.m */,
+				9F5D130524C4AF78F57038987F89960C /* GCDAsyncUdpSocket.h */,
+				3500BB3FF31A2F0FBC9C511059B08CC0 /* GCDAsyncUdpSocket.m */,
+				C54452CD5AB8DE2E0C7C70F4EE47F446 /* Support Files */,
+			);
+			name = CocoaAsyncSocket;
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		312B48D08B6C882DD9406CF191DCA5CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD2919AC989CC3F8FE32384B602700BE /* iOS */,
+				4F411444610F6B5C205B8699924B5D52 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F411444610F6B5C205B8699924B5D52 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				6CAEA0B7775956DACE13B3216BC0AAB2 /* Cocoa.framework */,
+				EEC817A6B950B57AB7BF678ACCF181CB /* CoreServices.framework */,
+				003D5C5894FC035270A48A1A76F1D5B3 /* Security.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		9164900EE1D5EE88ABFAB9DFBE857103 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				13275B91AF405F1995B80443FBF2AF60 /* Pods-MouseMage-MouseMage iOS */,
+				FC0B5FDD805F0AE9476548EC2A2F8559 /* Pods-MouseMage-MouseMage macOS */,
+				04E35C190AFD0A072649B397A2BA1CC7 /* Pods-MouseMage-MouseMage watchOS WatchKit Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BB2BDAA8DB999C491DAC5EAE1CFDC78F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3080A79DED44578083E8E78E65C021E4 /* CocoaAsyncSocket */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C54452CD5AB8DE2E0C7C70F4EE47F446 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2639E81FE8BF410417EC57B3B2A69B95 /* CocoaAsyncSocket-iOS.modulemap */,
+				91915A1CB464139CF594C5713911E9FB /* CocoaAsyncSocket-iOS.xcconfig */,
+				F38860856C8A6980CEB9A0A802299975 /* CocoaAsyncSocket-iOS-dummy.m */,
+				6506F3B7998081D0D4C1D6B9F75EC914 /* CocoaAsyncSocket-iOS-Info.plist */,
+				A5158BC7249E246397503A6EC35BC527 /* CocoaAsyncSocket-iOS-prefix.pch */,
+				678B503E9CCEF29C17E81DD7465EBCB4 /* CocoaAsyncSocket-iOS-umbrella.h */,
+				1CD2DDEB824EA3D33EB954ADDF883C92 /* CocoaAsyncSocket-macOS.modulemap */,
+				F09681359F7B157FC33FB7E6352B1DDF /* CocoaAsyncSocket-macOS.xcconfig */,
+				A3F791B011013A93B12F50B8AA37B57E /* CocoaAsyncSocket-macOS-dummy.m */,
+				9D7D0F0555E5C6BB232DDE4ED5000082 /* CocoaAsyncSocket-macOS-Info.plist */,
+				A9C0C1FCA97F067913DE63CD224AFA9A /* CocoaAsyncSocket-macOS-prefix.pch */,
+				FF39FC8EDB966C37E6A958F7118793BB /* CocoaAsyncSocket-macOS-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaAsyncSocket-iOS";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				312B48D08B6C882DD9406CF191DCA5CC /* Frameworks */,
+				BB2BDAA8DB999C491DAC5EAE1CFDC78F /* Pods */,
+				F14DAE775E1A4462DDD2895AF454323F /* Products */,
+				9164900EE1D5EE88ABFAB9DFBE857103 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F14DAE775E1A4462DDD2895AF454323F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E34060F0E50D7E1F8818E6F644096B9 /* CocoaAsyncSocket.framework */,
+				992C2646486A52AD307D9FFC2C2AED03 /* CocoaAsyncSocket.framework */,
+				8D4D4BDD6E48F2F491A3B51613EA4FF1 /* Pods_MouseMage_MouseMage_iOS.framework */,
+				7D6DBB1494302D26BAE42129E4EC3832 /* Pods_MouseMage_MouseMage_macOS.framework */,
+				6B0465DEC117004ECDBC1E28D0C4161A /* Pods_MouseMage_MouseMage_watchOS_WatchKit_Extension.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC0B5FDD805F0AE9476548EC2A2F8559 /* Pods-MouseMage-MouseMage macOS */ = {
+			isa = PBXGroup;
+			children = (
+				77654FC06458E91B98E7F72748D08199 /* Pods-MouseMage-MouseMage macOS.modulemap */,
+				691ECD7855E8FC99511466199AB2D93A /* Pods-MouseMage-MouseMage macOS-acknowledgements.markdown */,
+				B0FD739E93F90FA4A63DB0654F9F2842 /* Pods-MouseMage-MouseMage macOS-acknowledgements.plist */,
+				AA9D82DDC4D60A5C30E17E3434B772ED /* Pods-MouseMage-MouseMage macOS-dummy.m */,
+				7C03AF0C57167656D1BFCFF8C3B8BE3E /* Pods-MouseMage-MouseMage macOS-frameworks.sh */,
+				78D2FB68BAC85203BD816827A395670C /* Pods-MouseMage-MouseMage macOS-Info.plist */,
+				42A32573A73CBDEABE56F25C655A6101 /* Pods-MouseMage-MouseMage macOS-umbrella.h */,
+				406CBC77DF2BEBEF1380234F8E3CD232 /* Pods-MouseMage-MouseMage macOS.debug.xcconfig */,
+				6AB934EB0BA2BD7AB57E04F9E06AF33A /* Pods-MouseMage-MouseMage macOS.release.xcconfig */,
+			);
+			name = "Pods-MouseMage-MouseMage macOS";
+			path = "Target Support Files/Pods-MouseMage-MouseMage macOS";
+			sourceTree = "<group>";
+		};
+		FD2919AC989CC3F8FE32384B602700BE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				98084203B3A81883D9E05408D77D6600 /* CFNetwork.framework */,
+				0031390B484CF1B48A0005D0DD4746FE /* Foundation.framework */,
+				181ED4CD7BEA96EE4298C195F8FDB421 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7FE8247EA00D2F6C843C8D3E1F5CFFE5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE93D4180211D2B7CF69513E656C23EE /* Pods-MouseMage-MouseMage watchOS WatchKit Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BE0E9E1A55C47BDB9E9A6E4C9D10E21 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71984981BAAE0937024F4CD50939B517 /* Pods-MouseMage-MouseMage macOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC9C3E63F8CA622F29B87D114271902B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E30B18983FEB9AFFDBBA9E9747EABA96 /* CocoaAsyncSocket-iOS-umbrella.h in Headers */,
+				749B117410322704AC9E1CB019C64731 /* GCDAsyncSocket.h in Headers */,
+				4D29EAD3A4ABAD587E87460EAFD321D3 /* GCDAsyncUdpSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D843FCE85982FFB18438B306094620AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1819791C9619F8FA855D0353BC40684C /* CocoaAsyncSocket-macOS-umbrella.h in Headers */,
+				FBDF1E50927E651434340079960B75C4 /* GCDAsyncSocket.h in Headers */,
+				5E613522AA6A4B26E126BFB66531A23D /* GCDAsyncUdpSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF58942F61FADCB9013BC6B645971BF5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59C09A72871667E83A0D1E7F0D55D7BB /* Pods-MouseMage-MouseMage iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0BC788DE2A61B8C2DBDB29DE8A603395 /* Pods-MouseMage-MouseMage macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14F806B25965467EA210ED358F8398CE /* Build configuration list for PBXNativeTarget "Pods-MouseMage-MouseMage macOS" */;
+			buildPhases = (
+				9BE0E9E1A55C47BDB9E9A6E4C9D10E21 /* Headers */,
+				C70F1BC2E7D768C33E1533A4212991DB /* Sources */,
+				01D37CE6B1059EAD6C2F474632548E41 /* Frameworks */,
+				D75B0027C61CD7A5FAB385A4952967DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E251C3A851D65F327D32FF90B1F6A980 /* PBXTargetDependency */,
+			);
+			name = "Pods-MouseMage-MouseMage macOS";
+			productName = "Pods-MouseMage-MouseMage macOS";
+			productReference = 7D6DBB1494302D26BAE42129E4EC3832 /* Pods_MouseMage_MouseMage_macOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1B6E44B768ABE45C02ACE23636D4A591 /* CocoaAsyncSocket-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57F6CFEB0126CA9B2B8848647965076E /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket-iOS" */;
+			buildPhases = (
+				AC9C3E63F8CA622F29B87D114271902B /* Headers */,
+				C95DD45370C9344F795FDAAF82006FF2 /* Sources */,
+				3ED4EC08803F910DEFCA5090559EC667 /* Frameworks */,
+				4E39A20FBACC41BE00ABF991E3B2CF41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CocoaAsyncSocket-iOS";
+			productName = "CocoaAsyncSocket-iOS";
+			productReference = 4E34060F0E50D7E1F8818E6F644096B9 /* CocoaAsyncSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1C751A960C44A3AF79929BC14FD193AC /* CocoaAsyncSocket-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA9A378A5C816E49FAF7328F779C55BF /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket-macOS" */;
+			buildPhases = (
+				D843FCE85982FFB18438B306094620AA /* Headers */,
+				1D6FDF27094CD387D5209DA69B4D1B52 /* Sources */,
+				BC8DB6B712F911CFF098C6FD6D0DF205 /* Frameworks */,
+				04F23723562F725F783A875DADA821F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CocoaAsyncSocket-macOS";
+			productName = "CocoaAsyncSocket-macOS";
+			productReference = 992C2646486A52AD307D9FFC2C2AED03 /* CocoaAsyncSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		84DB8B20118A1070BEE7C9EF61C732E8 /* Pods-MouseMage-MouseMage watchOS WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2BA978621AFF9652BE68AC385A14762 /* Build configuration list for PBXNativeTarget "Pods-MouseMage-MouseMage watchOS WatchKit Extension" */;
+			buildPhases = (
+				7FE8247EA00D2F6C843C8D3E1F5CFFE5 /* Headers */,
+				9E841ECF6A74040237C17BE0EDE24594 /* Sources */,
+				8503F15E3C002340C262C9D930E81565 /* Frameworks */,
+				35905899A3320C79FABF5DE3A8AA6102 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8A12919981D96D29B999B65870F037C /* PBXTargetDependency */,
+			);
+			name = "Pods-MouseMage-MouseMage watchOS WatchKit Extension";
+			productName = "Pods-MouseMage-MouseMage watchOS WatchKit Extension";
+			productReference = 6B0465DEC117004ECDBC1E28D0C4161A /* Pods_MouseMage_MouseMage_watchOS_WatchKit_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C15F582F9E0F31FDE56FF9FCDF92BF45 /* Pods-MouseMage-MouseMage iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 766650D4EA702541DFD0E7B66557FAE3 /* Build configuration list for PBXNativeTarget "Pods-MouseMage-MouseMage iOS" */;
+			buildPhases = (
+				FF58942F61FADCB9013BC6B645971BF5 /* Headers */,
+				137DDDEFC83B13A48273BFD817069125 /* Sources */,
+				E19E35DA711C998F961715781BD989F0 /* Frameworks */,
+				F7AE5BECA669E4333626F140F16BC8AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C649E19126A8C8991938AEF945C7C5A /* PBXTargetDependency */,
+			);
+			name = "Pods-MouseMage-MouseMage iOS";
+			productName = "Pods-MouseMage-MouseMage iOS";
+			productReference = 8D4D4BDD6E48F2F491A3B51613EA4FF1 /* Pods_MouseMage_MouseMage_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F14DAE775E1A4462DDD2895AF454323F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B6E44B768ABE45C02ACE23636D4A591 /* CocoaAsyncSocket-iOS */,
+				1C751A960C44A3AF79929BC14FD193AC /* CocoaAsyncSocket-macOS */,
+				C15F582F9E0F31FDE56FF9FCDF92BF45 /* Pods-MouseMage-MouseMage iOS */,
+				0BC788DE2A61B8C2DBDB29DE8A603395 /* Pods-MouseMage-MouseMage macOS */,
+				84DB8B20118A1070BEE7C9EF61C732E8 /* Pods-MouseMage-MouseMage watchOS WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04F23723562F725F783A875DADA821F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35905899A3320C79FABF5DE3A8AA6102 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E39A20FBACC41BE00ABF991E3B2CF41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D75B0027C61CD7A5FAB385A4952967DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7AE5BECA669E4333626F140F16BC8AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		137DDDEFC83B13A48273BFD817069125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E867362E65B09E162CA6B9505C807B98 /* Pods-MouseMage-MouseMage iOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D6FDF27094CD387D5209DA69B4D1B52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B424D2E8F4F76DD84FC0A9A20AFB7D2 /* CocoaAsyncSocket-macOS-dummy.m in Sources */,
+				A0DC8157CAF04FC06AEE60FE7861B86F /* GCDAsyncSocket.m in Sources */,
+				3DE951BB0AE5F31D86228FF0A0B34D6E /* GCDAsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E841ECF6A74040237C17BE0EDE24594 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F2D898B3D0FACE6C771FCEDD10E252A /* Pods-MouseMage-MouseMage watchOS WatchKit Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C70F1BC2E7D768C33E1533A4212991DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD82E5E2F9A7CF39FA17F8CE0059020 /* Pods-MouseMage-MouseMage macOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C95DD45370C9344F795FDAAF82006FF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B14BAD75C23C90E5AA1AE7CEF08F635F /* CocoaAsyncSocket-iOS-dummy.m in Sources */,
+				A84B0E3AF5F7C832CABFE08C0A20C151 /* GCDAsyncSocket.m in Sources */,
+				31AD957C790C00CD00EF0719DCD789F1 /* GCDAsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C649E19126A8C8991938AEF945C7C5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CocoaAsyncSocket-iOS";
+			target = 1B6E44B768ABE45C02ACE23636D4A591 /* CocoaAsyncSocket-iOS */;
+			targetProxy = 2D0643F00B0F90B7BFD15318C000C51A /* PBXContainerItemProxy */;
+		};
+		E251C3A851D65F327D32FF90B1F6A980 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CocoaAsyncSocket-macOS";
+			target = 1C751A960C44A3AF79929BC14FD193AC /* CocoaAsyncSocket-macOS */;
+			targetProxy = ED5299B066E34F6071291401ACC12040 /* PBXContainerItemProxy */;
+		};
+		E8A12919981D96D29B999B65870F037C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CocoaAsyncSocket-iOS";
+			target = 1B6E44B768ABE45C02ACE23636D4A591 /* CocoaAsyncSocket-iOS */;
+			targetProxy = 46317EAE5057B10A4C2F42E6F67A7823 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		057E0B868E59AB5455AF913A0EC400A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 406CBC77DF2BEBEF1380234F8E3CD232 /* Pods-MouseMage-MouseMage macOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-MouseMage-MouseMage macOS/Pods-MouseMage-MouseMage macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-MouseMage-MouseMage macOS/Pods-MouseMage-MouseMage macOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0F4A37C872A2BEE0E9E234A7E82EDAAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AB934EB0BA2BD7AB57E04F9E06AF33A /* Pods-MouseMage-MouseMage macOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-MouseMage-MouseMage macOS/Pods-MouseMage-MouseMage macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/Pods-MouseMage-MouseMage macOS/Pods-MouseMage-MouseMage macOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1A768D206EDB5E9D0C70B26703518117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91915A1CB464139CF594C5713911E9FB /* CocoaAsyncSocket-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket-iOS/CocoaAsyncSocket-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket-iOS/CocoaAsyncSocket-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket-iOS/CocoaAsyncSocket-iOS.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		293D1490CDA9F14234C680C709CBC6CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		2CB7B92586138FA9AAAFD77E7CB4372A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E84A75391FD5E0F58DA0AA238BF5D2C1 /* Pods-MouseMage-MouseMage iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MouseMage-MouseMage iOS/Pods-MouseMage-MouseMage iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MouseMage-MouseMage iOS/Pods-MouseMage-MouseMage iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3604B2ED909F26374622845CCC9C1A23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		715BA619373AD7FA39CCABBA997960C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91915A1CB464139CF594C5713911E9FB /* CocoaAsyncSocket-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket-iOS/CocoaAsyncSocket-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket-iOS/CocoaAsyncSocket-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket-iOS/CocoaAsyncSocket-iOS.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		76024CC9C0C64C5D7224CB4F56938769 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4234E82D18302025370CA0E7069C579D /* Pods-MouseMage-MouseMage watchOS WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MouseMage-MouseMage watchOS WatchKit Extension/Pods-MouseMage-MouseMage watchOS WatchKit Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MouseMage-MouseMage watchOS WatchKit Extension/Pods-MouseMage-MouseMage watchOS WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A124A2B1677892E5C0234A5F4AC128E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F09681359F7B157FC33FB7E6352B1DDF /* CocoaAsyncSocket-macOS.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket-macOS/CocoaAsyncSocket-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket-macOS/CocoaAsyncSocket-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket-macOS/CocoaAsyncSocket-macOS.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BA0EBFB88D45047CB5DBA1D2F256550B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F09681359F7B157FC33FB7E6352B1DDF /* CocoaAsyncSocket-macOS.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket-macOS/CocoaAsyncSocket-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket-macOS/CocoaAsyncSocket-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket-macOS/CocoaAsyncSocket-macOS.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DED6756D0AC628C26DC0A006DF57214D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AED724790590BDAD83B85D0C673F09A0 /* Pods-MouseMage-MouseMage iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MouseMage-MouseMage iOS/Pods-MouseMage-MouseMage iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MouseMage-MouseMage iOS/Pods-MouseMage-MouseMage iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EDFC9108F6061D9E3E830A0A30E4BAA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAFB72126285BC692E6EDEFCFB1DC5B1 /* Pods-MouseMage-MouseMage watchOS WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MouseMage-MouseMage watchOS WatchKit Extension/Pods-MouseMage-MouseMage watchOS WatchKit Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MouseMage-MouseMage watchOS WatchKit Extension/Pods-MouseMage-MouseMage watchOS WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14F806B25965467EA210ED358F8398CE /* Build configuration list for PBXNativeTarget "Pods-MouseMage-MouseMage macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				057E0B868E59AB5455AF913A0EC400A2 /* Debug */,
+				0F4A37C872A2BEE0E9E234A7E82EDAAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3604B2ED909F26374622845CCC9C1A23 /* Debug */,
+				293D1490CDA9F14234C680C709CBC6CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57F6CFEB0126CA9B2B8848647965076E /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A768D206EDB5E9D0C70B26703518117 /* Debug */,
+				715BA619373AD7FA39CCABBA997960C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		766650D4EA702541DFD0E7B66557FAE3 /* Build configuration list for PBXNativeTarget "Pods-MouseMage-MouseMage iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DED6756D0AC628C26DC0A006DF57214D /* Debug */,
+				2CB7B92586138FA9AAAFD77E7CB4372A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2BA978621AFF9652BE68AC385A14762 /* Build configuration list for PBXNativeTarget "Pods-MouseMage-MouseMage watchOS WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDFC9108F6061D9E3E830A0A30E4BAA9 /* Debug */,
+				76024CC9C0C64C5D7224CB4F56938769 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA9A378A5C816E49FAF7328F779C55BF /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A124A2B1677892E5C0234A5F4AC128E5 /* Debug */,
+				BA0EBFB88D45047CB5DBA1D2F256550B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,1102 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2417B2978ADA9FF8CB4B8D11 /* Pods_MouseMage_MouseMage_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1667E4A990456A4C0D49F2F /* Pods_MouseMage_MouseMage_iOS.framework */; };
+		933C75759DC791A7E2691FEE /* Pods_MouseMage_MouseMage_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B2A11EB702763E61E6AFB7 /* Pods_MouseMage_MouseMage_macOS.framework */; };
+		F424889323A026600070C4BA /* ServerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F424889223A0265F0070C4BA /* ServerConnection.swift */; };
+		F4704EAA239F843F00CABC3F /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4704EA9239F843F00CABC3F /* Shell.swift */; };
+		F47BAC6B23A02DAB00317AAD /* RemoteControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47BAC6A23A02DAB00317AAD /* RemoteControl.swift */; };
+		F47BAC6D23A0564B00317AAD /* ButtonPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47BAC6C23A0564B00317AAD /* ButtonPacket.swift */; };
+		F47BAC6E23A0580400317AAD /* ButtonPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47BAC6C23A0564B00317AAD /* ButtonPacket.swift */; };
+		F489B10D239F20C4003A4F2B /* Trackpad.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489B10C239F20C4003A4F2B /* Trackpad.swift */; };
+		F49B5CB223A016A3003466D6 /* RemoteConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49B5CB123A016A3003466D6 /* RemoteConnection.swift */; };
+		F49B5CB323A01923003466D6 /* RemoteConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49B5CB123A016A3003466D6 /* RemoteConnection.swift */; };
+		F4BC21AE239DEFA40048C603 /* MoveMousePacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC21AD239DEFA40048C603 /* MoveMousePacket.swift */; };
+		F4BC21B0239DF4620048C603 /* ScrollPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC21AF239DF4620048C603 /* ScrollPacket.swift */; };
+		F4BC21B2239DF7F60048C603 /* ClickPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC21B1239DF7F60048C603 /* ClickPacket.swift */; };
+		F4BC21B4239E18E20048C603 /* AuthBeginPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC21B3239E18E20048C603 /* AuthBeginPacket.swift */; };
+		F4BC21B8239E1F2B0048C603 /* AuthGrantedPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC21B7239E1F2B0048C603 /* AuthGrantedPacket.swift */; };
+		F4BC21BA239E1F5D0048C603 /* AuthDeniedPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC21B9239E1F5D0048C603 /* AuthDeniedPacket.swift */; };
+		F4BC21BC239E21FA0048C603 /* AuthRequiredPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC21BB239E21FA0048C603 /* AuthRequiredPacket.swift */; };
+		F4BC2262239EDFB10048C603 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC2261239EDFB10048C603 /* AppDelegate.swift */; };
+		F4BC2264239EDFB10048C603 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC2263239EDFB10048C603 /* SceneDelegate.swift */; };
+		F4BC2266239EDFB10048C603 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC2265239EDFB10048C603 /* ContentView.swift */; };
+		F4BC2268239EDFB20048C603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4BC2267239EDFB20048C603 /* Assets.xcassets */; };
+		F4BC226B239EDFB20048C603 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4BC226A239EDFB20048C603 /* Preview Assets.xcassets */; };
+		F4BC226E239EDFB20048C603 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4BC226C239EDFB20048C603 /* LaunchScreen.storyboard */; };
+		F4BC2279239EDFB20048C603 /* MouseMage_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC2278239EDFB20048C603 /* MouseMage_iOSTests.swift */; };
+		F4BC2282239EE0EE0048C603 /* MoveMousePacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC21AD239DEFA40048C603 /* MoveMousePacket.swift */; };
+		F4BC2283239EE0F10048C603 /* ScrollPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC21AF239DF4620048C603 /* ScrollPacket.swift */; };
+		F4BC2284239EE0F30048C603 /* ClickPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC21B1239DF7F60048C603 /* ClickPacket.swift */; };
+		F4BC2285239EE1040048C603 /* ServerReadyPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D61CA3239DDFDA006E74A3 /* ServerReadyPacket.swift */; };
+		F4BC2286239EE1040048C603 /* AuthBeginPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC21B3239E18E20048C603 /* AuthBeginPacket.swift */; };
+		F4BC2287239EE1040048C603 /* AuthGrantedPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC21B7239E1F2B0048C603 /* AuthGrantedPacket.swift */; };
+		F4BC2288239EE1040048C603 /* AuthDeniedPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC21B9239E1F5D0048C603 /* AuthDeniedPacket.swift */; };
+		F4BC2289239EE1040048C603 /* AuthRequiredPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC21BB239E21FA0048C603 /* AuthRequiredPacket.swift */; };
+		F4BC228A239EE1040048C603 /* PacketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D61C9F239DDFA9006E74A3 /* PacketType.swift */; };
+		F4BC228B239EE1040048C603 /* Packet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D61CA1239DDFBB006E74A3 /* Packet.swift */; };
+		F4BC228D239EE1100048C603 /* RequestAuthPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC228C239EE1100048C603 /* RequestAuthPacket.swift */; };
+		F4BC2290239EE17E0048C603 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D61C96239DB445006E74A3 /* Extensions.swift */; };
+		F4BC2291239EE17E0048C603 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D61C98239DB536006E74A3 /* Helpers.swift */; };
+		F4BC2292239EE5CD0048C603 /* RequestAuthPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC228C239EE1100048C603 /* RequestAuthPacket.swift */; };
+		F4BC2294239F00780048C603 /* MouseControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC2293239F00780048C603 /* MouseControl.swift */; };
+		F4BC2295239F00D40048C603 /* MouseControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC2293239F00780048C603 /* MouseControl.swift */; };
+		F4BC2299239F04650048C603 /* RemoteMouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC2298239F04650048C603 /* RemoteMouse.swift */; };
+		F4BC229D239F06E80048C603 /* ServerFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC229C239F06E80048C603 /* ServerFinder.swift */; };
+		F4BC22A1239F187B0048C603 /* Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC22A0239F187B0048C603 /* Remote.swift */; };
+		F4D61C74239DAA3E006E74A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D61C73239DAA3E006E74A3 /* AppDelegate.swift */; };
+		F4D61C78239DAA40006E74A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D61C77239DAA40006E74A3 /* Assets.xcassets */; };
+		F4D61C7B239DAA40006E74A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D61C7A239DAA40006E74A3 /* Preview Assets.xcassets */; };
+		F4D61C7E239DAA40006E74A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4D61C7C239DAA40006E74A3 /* Main.storyboard */; };
+		F4D61C8A239DAA40006E74A3 /* MouseMageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D61C89239DAA40006E74A3 /* MouseMageTests.swift */; };
+		F4D61C95239DB287006E74A3 /* Mouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D61C94239DB287006E74A3 /* Mouse.swift */; };
+		F4D61C97239DB445006E74A3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D61C96239DB445006E74A3 /* Extensions.swift */; };
+		F4D61C99239DB536006E74A3 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D61C98239DB536006E74A3 /* Helpers.swift */; };
+		F4D61C9B239DBAB7006E74A3 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D61C9A239DBAB7006E74A3 /* Server.swift */; };
+		F4D61C9D239DCBE2006E74A3 /* Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D61C9C239DCBE1006E74A3 /* Remote.swift */; };
+		F4D61CA0239DDFA9006E74A3 /* PacketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D61C9F239DDFA9006E74A3 /* PacketType.swift */; };
+		F4D61CA2239DDFBB006E74A3 /* Packet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D61CA1239DDFBB006E74A3 /* Packet.swift */; };
+		F4D61CA4239DDFDA006E74A3 /* ServerReadyPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D61CA3239DDFDA006E74A3 /* ServerReadyPacket.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4BC2275239EDFB20048C603 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4D61C68239DAA3E006E74A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4BC225E239EDFB10048C603;
+			remoteInfo = "MouseMage iOS";
+		};
+		F4D61C86239DAA40006E74A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4D61C68239DAA3E006E74A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4D61C6F239DAA3E006E74A3;
+			remoteInfo = MouseMage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F47BACF223A09C5C00317AAD /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3700D32BADAD5A7FECE70B48 /* Pods-MouseMage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MouseMage.debug.xcconfig"; path = "Target Support Files/Pods-MouseMage/Pods-MouseMage.debug.xcconfig"; sourceTree = "<group>"; };
+		5575EE80E8DE8730FD5D8A93 /* Pods-MouseMage-MouseMage watchOS WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MouseMage-MouseMage watchOS WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-MouseMage-MouseMage watchOS WatchKit Extension/Pods-MouseMage-MouseMage watchOS WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		570528525DFB7D77673DB9C8 /* Pods-MouseMage-MouseMage macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MouseMage-MouseMage macOS.release.xcconfig"; path = "Target Support Files/Pods-MouseMage-MouseMage macOS/Pods-MouseMage-MouseMage macOS.release.xcconfig"; sourceTree = "<group>"; };
+		5A45800E739F5656841EB56D /* Pods-MouseMage-MouseMage watchOS WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MouseMage-MouseMage watchOS WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-MouseMage-MouseMage watchOS WatchKit Extension/Pods-MouseMage-MouseMage watchOS WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		7A8ECBA6D7C7A7CAB5B244FC /* Pods-MouseMage-MouseMage macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MouseMage-MouseMage macOS.debug.xcconfig"; path = "Target Support Files/Pods-MouseMage-MouseMage macOS/Pods-MouseMage-MouseMage macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		AB102394930D027CEB7E6730 /* Pods-MouseMage-MouseMage iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MouseMage-MouseMage iOS.release.xcconfig"; path = "Target Support Files/Pods-MouseMage-MouseMage iOS/Pods-MouseMage-MouseMage iOS.release.xcconfig"; sourceTree = "<group>"; };
+		AB365F83F4944384AC02FDD7 /* Pods-MouseMage-MouseMage iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MouseMage-MouseMage iOS.debug.xcconfig"; path = "Target Support Files/Pods-MouseMage-MouseMage iOS/Pods-MouseMage-MouseMage iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B1667E4A990456A4C0D49F2F /* Pods_MouseMage_MouseMage_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MouseMage_MouseMage_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B29B791C334E512072F2D7B2 /* Pods-MouseMage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MouseMage.release.xcconfig"; path = "Target Support Files/Pods-MouseMage/Pods-MouseMage.release.xcconfig"; sourceTree = "<group>"; };
+		C9B2A11EB702763E61E6AFB7 /* Pods_MouseMage_MouseMage_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MouseMage_MouseMage_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D961443988F42D61AB462E82 /* Pods_MouseMage_MouseMage_watchOS_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MouseMage_MouseMage_watchOS_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F424889223A0265F0070C4BA /* ServerConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConnection.swift; sourceTree = "<group>"; };
+		F4704EA9239F843F00CABC3F /* Shell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
+		F47BAC6A23A02DAB00317AAD /* RemoteControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControl.swift; sourceTree = "<group>"; };
+		F47BAC6C23A0564B00317AAD /* ButtonPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPacket.swift; sourceTree = "<group>"; };
+		F489B10C239F20C4003A4F2B /* Trackpad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trackpad.swift; sourceTree = "<group>"; };
+		F49B5CB123A016A3003466D6 /* RemoteConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConnection.swift; sourceTree = "<group>"; };
+		F4BC21AD239DEFA40048C603 /* MoveMousePacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveMousePacket.swift; sourceTree = "<group>"; };
+		F4BC21AF239DF4620048C603 /* ScrollPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPacket.swift; sourceTree = "<group>"; };
+		F4BC21B1239DF7F60048C603 /* ClickPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickPacket.swift; sourceTree = "<group>"; };
+		F4BC21B3239E18E20048C603 /* AuthBeginPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBeginPacket.swift; sourceTree = "<group>"; };
+		F4BC21B7239E1F2B0048C603 /* AuthGrantedPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthGrantedPacket.swift; sourceTree = "<group>"; };
+		F4BC21B9239E1F5D0048C603 /* AuthDeniedPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDeniedPacket.swift; sourceTree = "<group>"; };
+		F4BC21BB239E21FA0048C603 /* AuthRequiredPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRequiredPacket.swift; sourceTree = "<group>"; };
+		F4BC225F239EDFB10048C603 /* MouseMage iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MouseMage iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4BC2261239EDFB10048C603 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4BC2263239EDFB10048C603 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F4BC2265239EDFB10048C603 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F4BC2267239EDFB20048C603 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4BC226A239EDFB20048C603 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F4BC226D239EDFB20048C603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4BC226F239EDFB20048C603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4BC2274239EDFB20048C603 /* MouseMage iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MouseMage iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4BC2278239EDFB20048C603 /* MouseMage_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseMage_iOSTests.swift; sourceTree = "<group>"; };
+		F4BC227A239EDFB20048C603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4BC228C239EE1100048C603 /* RequestAuthPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestAuthPacket.swift; sourceTree = "<group>"; };
+		F4BC2293239F00780048C603 /* MouseControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseControl.swift; sourceTree = "<group>"; };
+		F4BC2298239F04650048C603 /* RemoteMouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteMouse.swift; sourceTree = "<group>"; };
+		F4BC229C239F06E80048C603 /* ServerFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerFinder.swift; sourceTree = "<group>"; };
+		F4BC22A0239F187B0048C603 /* Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remote.swift; sourceTree = "<group>"; };
+		F4D61C70239DAA3E006E74A3 /* MouseMage macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MouseMage macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4D61C73239DAA3E006E74A3 /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 2; };
+		F4D61C77239DAA40006E74A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4D61C7A239DAA40006E74A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F4D61C7D239DAA40006E74A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4D61C7F239DAA40006E74A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4D61C80239DAA40006E74A3 /* MouseMage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MouseMage.entitlements; sourceTree = "<group>"; };
+		F4D61C85239DAA40006E74A3 /* MouseMageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MouseMageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4D61C89239DAA40006E74A3 /* MouseMageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouseMageTests.swift; sourceTree = "<group>"; };
+		F4D61C8B239DAA40006E74A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4D61C94239DB287006E74A3 /* Mouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouse.swift; sourceTree = "<group>"; };
+		F4D61C96239DB445006E74A3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F4D61C98239DB536006E74A3 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		F4D61C9A239DBAB7006E74A3 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		F4D61C9C239DCBE1006E74A3 /* Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remote.swift; sourceTree = "<group>"; };
+		F4D61C9F239DDFA9006E74A3 /* PacketType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketType.swift; sourceTree = "<group>"; };
+		F4D61CA1239DDFBB006E74A3 /* Packet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Packet.swift; sourceTree = "<group>"; };
+		F4D61CA3239DDFDA006E74A3 /* ServerReadyPacket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerReadyPacket.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4BC225C239EDFB10048C603 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2417B2978ADA9FF8CB4B8D11 /* Pods_MouseMage_MouseMage_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4BC2271239EDFB20048C603 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4D61C6D239DAA3E006E74A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				933C75759DC791A7E2691FEE /* Pods_MouseMage_MouseMage_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4D61C82239DAA40006E74A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB7575A68962BB6103F1D453 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3700D32BADAD5A7FECE70B48 /* Pods-MouseMage.debug.xcconfig */,
+				B29B791C334E512072F2D7B2 /* Pods-MouseMage.release.xcconfig */,
+				AB365F83F4944384AC02FDD7 /* Pods-MouseMage-MouseMage iOS.debug.xcconfig */,
+				AB102394930D027CEB7E6730 /* Pods-MouseMage-MouseMage iOS.release.xcconfig */,
+				7A8ECBA6D7C7A7CAB5B244FC /* Pods-MouseMage-MouseMage macOS.debug.xcconfig */,
+				570528525DFB7D77673DB9C8 /* Pods-MouseMage-MouseMage macOS.release.xcconfig */,
+				5575EE80E8DE8730FD5D8A93 /* Pods-MouseMage-MouseMage watchOS WatchKit Extension.debug.xcconfig */,
+				5A45800E739F5656841EB56D /* Pods-MouseMage-MouseMage watchOS WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F4BC2260239EDFB10048C603 /* MouseMage iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F4BC2261239EDFB10048C603 /* AppDelegate.swift */,
+				F4BC2263239EDFB10048C603 /* SceneDelegate.swift */,
+				F4BC22A3239F18B20048C603 /* Remote */,
+				F4BC22A2239F18AE0048C603 /* Views */,
+				F4BC2267239EDFB20048C603 /* Assets.xcassets */,
+				F4BC226C239EDFB20048C603 /* LaunchScreen.storyboard */,
+				F4BC226F239EDFB20048C603 /* Info.plist */,
+				F4BC2269239EDFB20048C603 /* Preview Content */,
+			);
+			path = "MouseMage iOS";
+			sourceTree = "<group>";
+		};
+		F4BC2269239EDFB20048C603 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F4BC226A239EDFB20048C603 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F4BC2277239EDFB20048C603 /* MouseMage iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4BC2278239EDFB20048C603 /* MouseMage_iOSTests.swift */,
+				F4BC227A239EDFB20048C603 /* Info.plist */,
+			);
+			path = "MouseMage iOSTests";
+			sourceTree = "<group>";
+		};
+		F4BC2281239EE0D90048C603 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F4D61C9E239DDF9E006E74A3 /* Packets */,
+				F4D61C96239DB445006E74A3 /* Extensions.swift */,
+				F4D61C98239DB536006E74A3 /* Helpers.swift */,
+				F4BC2293239F00780048C603 /* MouseControl.swift */,
+				F49B5CB123A016A3003466D6 /* RemoteConnection.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F4BC22A2239F18AE0048C603 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4BC2265239EDFB10048C603 /* ContentView.swift */,
+				F47BAC6A23A02DAB00317AAD /* RemoteControl.swift */,
+				F489B10C239F20C4003A4F2B /* Trackpad.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4BC22A3239F18B20048C603 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				F4BC229C239F06E80048C603 /* ServerFinder.swift */,
+				F424889223A0265F0070C4BA /* ServerConnection.swift */,
+				F4BC22A0239F187B0048C603 /* Remote.swift */,
+				F4BC2298239F04650048C603 /* RemoteMouse.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		F4BC22A4239F18DE0048C603 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				F4D61C9A239DBAB7006E74A3 /* Server.swift */,
+				F4D61C9C239DCBE1006E74A3 /* Remote.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		F4D61C67239DAA3E006E74A3 = {
+			isa = PBXGroup;
+			children = (
+				F4BC2281239EE0D90048C603 /* Common */,
+				F4D61C72239DAA3E006E74A3 /* MouseMage macOS */,
+				F4BC2260239EDFB10048C603 /* MouseMage iOS */,
+				F4D61C88239DAA40006E74A3 /* MouseMageTests */,
+				F4BC2277239EDFB20048C603 /* MouseMage iOSTests */,
+				F4D61C71239DAA3E006E74A3 /* Products */,
+				BB7575A68962BB6103F1D453 /* Pods */,
+				FF8DDE2B60CC7BA8C38CBD9B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
+		F4D61C71239DAA3E006E74A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4D61C70239DAA3E006E74A3 /* MouseMage macOS.app */,
+				F4D61C85239DAA40006E74A3 /* MouseMageTests.xctest */,
+				F4BC225F239EDFB10048C603 /* MouseMage iOS.app */,
+				F4BC2274239EDFB20048C603 /* MouseMage iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4D61C72239DAA3E006E74A3 /* MouseMage macOS */ = {
+			isa = PBXGroup;
+			children = (
+				F4D61C73239DAA3E006E74A3 /* AppDelegate.swift */,
+				F4D61C94239DB287006E74A3 /* Mouse.swift */,
+				F4BC22A4239F18DE0048C603 /* Remote */,
+				F4D61C77239DAA40006E74A3 /* Assets.xcassets */,
+				F4D61C7C239DAA40006E74A3 /* Main.storyboard */,
+				F4D61C7F239DAA40006E74A3 /* Info.plist */,
+				F4D61C80239DAA40006E74A3 /* MouseMage.entitlements */,
+				F4D61C79239DAA40006E74A3 /* Preview Content */,
+				F4704EA9239F843F00CABC3F /* Shell.swift */,
+			);
+			path = "MouseMage macOS";
+			sourceTree = "<group>";
+		};
+		F4D61C79239DAA40006E74A3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F4D61C7A239DAA40006E74A3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F4D61C88239DAA40006E74A3 /* MouseMageTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4D61C89239DAA40006E74A3 /* MouseMageTests.swift */,
+				F4D61C8B239DAA40006E74A3 /* Info.plist */,
+			);
+			path = MouseMageTests;
+			sourceTree = "<group>";
+		};
+		F4D61C9E239DDF9E006E74A3 /* Packets */ = {
+			isa = PBXGroup;
+			children = (
+				F4D61CA5239DEC80006E74A3 /* Client */,
+				F4D61CAA239DECD9006E74A3 /* Server */,
+				F4D61C9F239DDFA9006E74A3 /* PacketType.swift */,
+				F4D61CA1239DDFBB006E74A3 /* Packet.swift */,
+			);
+			path = Packets;
+			sourceTree = "<group>";
+		};
+		F4D61CA5239DEC80006E74A3 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				F4BC21AD239DEFA40048C603 /* MoveMousePacket.swift */,
+				F4BC21AF239DF4620048C603 /* ScrollPacket.swift */,
+				F4BC21B1239DF7F60048C603 /* ClickPacket.swift */,
+				F4BC228C239EE1100048C603 /* RequestAuthPacket.swift */,
+				F47BAC6C23A0564B00317AAD /* ButtonPacket.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		F4D61CAA239DECD9006E74A3 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				F4D61CA3239DDFDA006E74A3 /* ServerReadyPacket.swift */,
+				F4BC21B3239E18E20048C603 /* AuthBeginPacket.swift */,
+				F4BC21B7239E1F2B0048C603 /* AuthGrantedPacket.swift */,
+				F4BC21B9239E1F5D0048C603 /* AuthDeniedPacket.swift */,
+				F4BC21BB239E21FA0048C603 /* AuthRequiredPacket.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		FF8DDE2B60CC7BA8C38CBD9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1667E4A990456A4C0D49F2F /* Pods_MouseMage_MouseMage_iOS.framework */,
+				C9B2A11EB702763E61E6AFB7 /* Pods_MouseMage_MouseMage_macOS.framework */,
+				D961443988F42D61AB462E82 /* Pods_MouseMage_MouseMage_watchOS_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4BC225E239EDFB10048C603 /* MouseMage iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4BC227B239EDFB20048C603 /* Build configuration list for PBXNativeTarget "MouseMage iOS" */;
+			buildPhases = (
+				09621808CDC7DA1DEC345367 /* [CP] Check Pods Manifest.lock */,
+				F4BC225B239EDFB10048C603 /* Sources */,
+				F4BC225C239EDFB10048C603 /* Frameworks */,
+				F4BC225D239EDFB10048C603 /* Resources */,
+				038B2A684906AEDE0809DD94 /* [CP] Embed Pods Frameworks */,
+				F47BACF223A09C5C00317AAD /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MouseMage iOS";
+			productName = "MouseMage iOS";
+			productReference = F4BC225F239EDFB10048C603 /* MouseMage iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4BC2273239EDFB20048C603 /* MouseMage iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4BC227E239EDFB20048C603 /* Build configuration list for PBXNativeTarget "MouseMage iOSTests" */;
+			buildPhases = (
+				F4BC2270239EDFB20048C603 /* Sources */,
+				F4BC2271239EDFB20048C603 /* Frameworks */,
+				F4BC2272239EDFB20048C603 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4BC2276239EDFB20048C603 /* PBXTargetDependency */,
+			);
+			name = "MouseMage iOSTests";
+			productName = "MouseMage iOSTests";
+			productReference = F4BC2274239EDFB20048C603 /* MouseMage iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F4D61C6F239DAA3E006E74A3 /* MouseMage macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4D61C8E239DAA40006E74A3 /* Build configuration list for PBXNativeTarget "MouseMage macOS" */;
+			buildPhases = (
+				2DD5D877BCEB74949E33939C /* [CP] Check Pods Manifest.lock */,
+				F4D61C6C239DAA3E006E74A3 /* Sources */,
+				F4D61C6D239DAA3E006E74A3 /* Frameworks */,
+				F4D61C6E239DAA3E006E74A3 /* Resources */,
+				64046AB86C0EBB809DAB6ED0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MouseMage macOS";
+			productName = MouseMage;
+			productReference = F4D61C70239DAA3E006E74A3 /* MouseMage macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4D61C84239DAA40006E74A3 /* MouseMageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4D61C91239DAA40006E74A3 /* Build configuration list for PBXNativeTarget "MouseMageTests" */;
+			buildPhases = (
+				F4D61C81239DAA40006E74A3 /* Sources */,
+				F4D61C82239DAA40006E74A3 /* Frameworks */,
+				F4D61C83239DAA40006E74A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4D61C87239DAA40006E74A3 /* PBXTargetDependency */,
+			);
+			name = MouseMageTests;
+			productName = MouseMageTests;
+			productReference = F4D61C85239DAA40006E74A3 /* MouseMageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4D61C68239DAA3E006E74A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = thislooksfun;
+				TargetAttributes = {
+					F4BC225E239EDFB10048C603 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					F4BC2273239EDFB20048C603 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = F4BC225E239EDFB10048C603;
+					};
+					F4D61C6F239DAA3E006E74A3 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					F4D61C84239DAA40006E74A3 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = F4D61C6F239DAA3E006E74A3;
+					};
+				};
+			};
+			buildConfigurationList = F4D61C6B239DAA3E006E74A3 /* Build configuration list for PBXProject "MouseMage" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4D61C67239DAA3E006E74A3;
+			productRefGroup = F4D61C71239DAA3E006E74A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4D61C6F239DAA3E006E74A3 /* MouseMage macOS */,
+				F4D61C84239DAA40006E74A3 /* MouseMageTests */,
+				F4BC225E239EDFB10048C603 /* MouseMage iOS */,
+				F4BC2273239EDFB20048C603 /* MouseMage iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4BC225D239EDFB10048C603 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4BC226E239EDFB20048C603 /* LaunchScreen.storyboard in Resources */,
+				F4BC226B239EDFB20048C603 /* Preview Assets.xcassets in Resources */,
+				F4BC2268239EDFB20048C603 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4BC2272239EDFB20048C603 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4D61C6E239DAA3E006E74A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4D61C7E239DAA40006E74A3 /* Main.storyboard in Resources */,
+				F4D61C7B239DAA40006E74A3 /* Preview Assets.xcassets in Resources */,
+				F4D61C78239DAA40006E74A3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4D61C83239DAA40006E74A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		038B2A684906AEDE0809DD94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MouseMage-MouseMage iOS/Pods-MouseMage-MouseMage iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MouseMage-MouseMage iOS/Pods-MouseMage-MouseMage iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MouseMage-MouseMage iOS/Pods-MouseMage-MouseMage iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		09621808CDC7DA1DEC345367 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MouseMage-MouseMage iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DD5D877BCEB74949E33939C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MouseMage-MouseMage macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64046AB86C0EBB809DAB6ED0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MouseMage-MouseMage macOS/Pods-MouseMage-MouseMage macOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MouseMage-MouseMage macOS/Pods-MouseMage-MouseMage macOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MouseMage-MouseMage macOS/Pods-MouseMage-MouseMage macOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4BC225B239EDFB10048C603 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49B5CB323A01923003466D6 /* RemoteConnection.swift in Sources */,
+				F4BC229D239F06E80048C603 /* ServerFinder.swift in Sources */,
+				F4BC22A1239F187B0048C603 /* Remote.swift in Sources */,
+				F4BC2288239EE1040048C603 /* AuthDeniedPacket.swift in Sources */,
+				F4BC2295239F00D40048C603 /* MouseControl.swift in Sources */,
+				F47BAC6B23A02DAB00317AAD /* RemoteControl.swift in Sources */,
+				F4BC2284239EE0F30048C603 /* ClickPacket.swift in Sources */,
+				F4BC2282239EE0EE0048C603 /* MoveMousePacket.swift in Sources */,
+				F4BC2287239EE1040048C603 /* AuthGrantedPacket.swift in Sources */,
+				F4BC2262239EDFB10048C603 /* AppDelegate.swift in Sources */,
+				F4BC2292239EE5CD0048C603 /* RequestAuthPacket.swift in Sources */,
+				F424889323A026600070C4BA /* ServerConnection.swift in Sources */,
+				F4BC2299239F04650048C603 /* RemoteMouse.swift in Sources */,
+				F4BC228A239EE1040048C603 /* PacketType.swift in Sources */,
+				F4BC2285239EE1040048C603 /* ServerReadyPacket.swift in Sources */,
+				F4BC2264239EDFB10048C603 /* SceneDelegate.swift in Sources */,
+				F4BC2266239EDFB10048C603 /* ContentView.swift in Sources */,
+				F4BC2283239EE0F10048C603 /* ScrollPacket.swift in Sources */,
+				F47BAC6D23A0564B00317AAD /* ButtonPacket.swift in Sources */,
+				F4BC2289239EE1040048C603 /* AuthRequiredPacket.swift in Sources */,
+				F4BC2286239EE1040048C603 /* AuthBeginPacket.swift in Sources */,
+				F4BC228B239EE1040048C603 /* Packet.swift in Sources */,
+				F489B10D239F20C4003A4F2B /* Trackpad.swift in Sources */,
+				F4BC2291239EE17E0048C603 /* Helpers.swift in Sources */,
+				F4BC2290239EE17E0048C603 /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4BC2270239EDFB20048C603 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4BC2279239EDFB20048C603 /* MouseMage_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4D61C6C239DAA3E006E74A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4BC21BC239E21FA0048C603 /* AuthRequiredPacket.swift in Sources */,
+				F49B5CB223A016A3003466D6 /* RemoteConnection.swift in Sources */,
+				F4BC2294239F00780048C603 /* MouseControl.swift in Sources */,
+				F47BAC6E23A0580400317AAD /* ButtonPacket.swift in Sources */,
+				F4BC21BA239E1F5D0048C603 /* AuthDeniedPacket.swift in Sources */,
+				F4D61CA4239DDFDA006E74A3 /* ServerReadyPacket.swift in Sources */,
+				F4BC21B8239E1F2B0048C603 /* AuthGrantedPacket.swift in Sources */,
+				F4D61C9B239DBAB7006E74A3 /* Server.swift in Sources */,
+				F4BC21B2239DF7F60048C603 /* ClickPacket.swift in Sources */,
+				F4D61C74239DAA3E006E74A3 /* AppDelegate.swift in Sources */,
+				F4704EAA239F843F00CABC3F /* Shell.swift in Sources */,
+				F4BC21AE239DEFA40048C603 /* MoveMousePacket.swift in Sources */,
+				F4BC21B0239DF4620048C603 /* ScrollPacket.swift in Sources */,
+				F4BC228D239EE1100048C603 /* RequestAuthPacket.swift in Sources */,
+				F4D61CA0239DDFA9006E74A3 /* PacketType.swift in Sources */,
+				F4D61C97239DB445006E74A3 /* Extensions.swift in Sources */,
+				F4D61C95239DB287006E74A3 /* Mouse.swift in Sources */,
+				F4D61C99239DB536006E74A3 /* Helpers.swift in Sources */,
+				F4D61C9D239DCBE2006E74A3 /* Remote.swift in Sources */,
+				F4BC21B4239E18E20048C603 /* AuthBeginPacket.swift in Sources */,
+				F4D61CA2239DDFBB006E74A3 /* Packet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4D61C81239DAA40006E74A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4D61C8A239DAA40006E74A3 /* MouseMageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4BC2276239EDFB20048C603 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4BC225E239EDFB10048C603 /* MouseMage iOS */;
+			targetProxy = F4BC2275239EDFB20048C603 /* PBXContainerItemProxy */;
+		};
+		F4D61C87239DAA40006E74A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4D61C6F239DAA3E006E74A3 /* MouseMage macOS */;
+			targetProxy = F4D61C86239DAA40006E74A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4BC226C239EDFB20048C603 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4BC226D239EDFB20048C603 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F4D61C7C239DAA40006E74A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4D61C7D239DAA40006E74A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4BC227C239EDFB20048C603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB365F83F4944384AC02FDD7 /* Pods-MouseMage-MouseMage iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MouseMage iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = Q9K6UK48V2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MouseMage iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.thislooksfun.MouseMage-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "MM_CLIENT DEBUG";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4BC227D239EDFB20048C603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB102394930D027CEB7E6730 /* Pods-MouseMage-MouseMage iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MouseMage iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = Q9K6UK48V2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MouseMage iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.thislooksfun.MouseMage-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4BC227F239EDFB20048C603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q9K6UK48V2;
+				INFOPLIST_FILE = "MouseMage iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.thislooksfun.MouseMage-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MouseMage iOS.app/MouseMage iOS";
+			};
+			name = Debug;
+		};
+		F4BC2280239EDFB20048C603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q9K6UK48V2;
+				INFOPLIST_FILE = "MouseMage iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.thislooksfun.MouseMage-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MouseMage iOS.app/MouseMage iOS";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4D61C8C239DAA40006E74A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4D61C8D239DAA40006E74A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F4D61C8F239DAA40006E74A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A8ECBA6D7C7A7CAB5B244FC /* Pods-MouseMage-MouseMage macOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "MouseMage macOS/MouseMage.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"MouseMage macOS/Preview Content\"";
+				DEVELOPMENT_TEAM = Q9K6UK48V2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MouseMage macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.thislooksfun.MouseMage-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG MM_SERVER";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F4D61C90239DAA40006E74A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 570528525DFB7D77673DB9C8 /* Pods-MouseMage-MouseMage macOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "MouseMage macOS/MouseMage.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"MouseMage macOS/Preview Content\"";
+				DEVELOPMENT_TEAM = Q9K6UK48V2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MouseMage macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.thislooksfun.MouseMage-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F4D61C92239DAA40006E74A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q9K6UK48V2;
+				INFOPLIST_FILE = MouseMageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = org.thislooksfun.MouseMageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MouseMage.app/Contents/MacOS/MouseMage";
+			};
+			name = Debug;
+		};
+		F4D61C93239DAA40006E74A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Q9K6UK48V2;
+				INFOPLIST_FILE = MouseMageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = org.thislooksfun.MouseMageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MouseMage.app/Contents/MacOS/MouseMage";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4BC227B239EDFB20048C603 /* Build configuration list for PBXNativeTarget "MouseMage iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4BC227C239EDFB20048C603 /* Debug */,
+				F4BC227D239EDFB20048C603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4BC227E239EDFB20048C603 /* Build configuration list for PBXNativeTarget "MouseMage iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4BC227F239EDFB20048C603 /* Debug */,
+				F4BC2280239EDFB20048C603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4D61C6B239DAA3E006E74A3 /* Build configuration list for PBXProject "MouseMage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4D61C8C239DAA40006E74A3 /* Debug */,
+				F4D61C8D239DAA40006E74A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4D61C8E239DAA40006E74A3 /* Build configuration list for PBXNativeTarget "MouseMage macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4D61C8F239DAA40006E74A3 /* Debug */,
+				F4D61C90239DAA40006E74A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4D61C91239DAA40006E74A3 /* Build configuration list for PBXNativeTarget "MouseMageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4D61C92239DAA40006E74A3 /* Debug */,
+				F4D61C93239DAA40006E74A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4D61C68239DAA3E006E74A3 /* Project object */;
+}
